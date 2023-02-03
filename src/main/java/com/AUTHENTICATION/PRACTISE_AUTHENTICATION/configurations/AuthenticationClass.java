@@ -23,7 +23,7 @@ public class AuthenticationClass {
 		UserDetails user1 = User.withUsername("u").password("u").roles("USER").build();
 
 		return new InMemoryUserDetailsManager(uer, user1);
-	}
+	} 
 	
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception
